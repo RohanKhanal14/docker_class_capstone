@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+header {
+  background: #667eea;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.content {
+  padding: 20px;
+}
+.task-form {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background: #5568d3;
+}
+.task-list {
+  list-style: none;
+}
+.task-item {
+  padding: 15px;
+  margin: 10px 0;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+.task-item.completed {
+  opacity: 0.6;
+  border-left-color: #28a745;
+}
+.task-actions {
+  margin-top: 10px;
+}
+.task-actions button {
+  width: auto;
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.delete-btn {
+  background: #dc3545;
+}
+.complete-btn {
+  background: #28a745;
+}
